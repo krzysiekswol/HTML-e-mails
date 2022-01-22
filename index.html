@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML E-mail</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #d8dada;
+            max-width: 800px;
+            font-size: 19px;
+            margin: auto;
+            padding: 3%;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .brand {
+            flex-basis: 30%;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .social-media {
+            flex-basis: 30%;
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style-type: none;
+            align-items: center;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+
+        .banner {
+            flex-grow: 2;
+        }
+
+        .banner__img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="brand">
+                <img src="./icons/angular-nyc.svg" alt="" class="logo">
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li class="social-media__item">
+                        <a href="" class="social-media__link">
+                            <img src="./icons/facebook-brands.svg" alt="facebook icon" target="_blank">
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a href="" class="social-media__link">
+                            <img src="./icons/linkedin-brands.svg" alt="linkedin icon" target="_blank">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner">
+                <figure>
+                    <img class="banner__img" src="./img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg" alt="laptop">
+                </figure>
+            </div>
+        </header>
+        <main>
+            <h1 class="title">Hi, this is your HTML email!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quae quas! Atque ducimus enim minima modi nemo numquam quia ullam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto laborum officiis pariatur placeat quae quaerat qui recusandae voluptatum. Accusantium autem, dolorum est expedita fuga illo ipsum libero magni nobis omnis porro quia quidem repudiandae suscipit unde vel velit voluptas.</p>
+            <button class="btn">Check my GitHub</button>
+            <hr>
+        </main>
+        <footer>
+            <p class="contact">
+                Krzysztof Swół
+                <br>
+                Osiedle Wysokie 9/38, 31-819 Kraków
+                <br>
+                krzysiek.swol@gmail.com
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
