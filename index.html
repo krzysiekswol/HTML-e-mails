@@ -23,10 +23,15 @@
             padding: 3%;
         }
 
+        .wrapper {
+            background-color: #f0f6fb;
+        }
+
         header {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            background-color: #fff;
         }
 
         .brand {
@@ -38,7 +43,7 @@
         }
 
         .social-media {
-            flex-basis: 30%;
+            width: 20%;
         }
 
         ul {
@@ -46,11 +51,26 @@
             justify-content: flex-end;
             list-style-type: none;
             align-items: center;
+            height: 100%;
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li:last-child {
+            margin-right: 10px;
+        }
+
+        .social-media__link {
+            display: flex;
+            align-items: center;
         }
 
         img {
             width: 40px;
-            height: 40px;
             margin-left: 10px;
         }
 
@@ -64,6 +84,50 @@
             margin: 0;
         }
 
+        main {
+            padding: 10px;
+        }
+
+        .title {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        p {
+            font-size: 0.75em;
+            padding-bottom: 10px;
+            line-height: 1.5rem;
+        }
+
+        hr {
+            width: 100%;
+            height: 1px;
+            background-color: #303840;
+        }
+
+        .btn {
+            float: right;
+            margin-bottom: 10px;
+            border: none;
+            background-color: #303840;
+            border-radius: 4px;
+            padding: 2% 5%;
+        }
+
+        .btn__link {
+            color: #fff;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        .contact {
+            text-align: center;
+            font-size: 0.6em;
+            line-height: 1rem;
+            font-style: italic;
+        }
+
 
     </style>
 </head>
@@ -71,17 +135,17 @@
     <div class="wrapper">
         <header>
             <div class="brand">
-                <img src="./icons/angular-nyc.svg" alt="" class="logo">
+                <img src="./img/logo.png" alt="" class="logo">
             </div>
             <div class="social-media">
                 <ul>
                     <li class="social-media__item">
-                        <a href="" class="social-media__link">
+                        <a href="https://www.facebook.com/krzysiek.swol/" class="social-media__link">
                             <img src="./icons/facebook-brands.svg" alt="facebook icon" target="_blank">
                         </a>
                     </li>
                     <li class="social-media__item">
-                        <a href="" class="social-media__link">
+                        <a href="https://www.linkedin.com/in/krzysztof-swol/" class="social-media__link">
                             <img src="./icons/linkedin-brands.svg" alt="linkedin icon" target="_blank">
                         </a>
                     </li>
@@ -97,7 +161,7 @@
             <h1 class="title">Hi, this is your HTML email!</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quae quas! Atque ducimus enim minima modi nemo numquam quia ullam.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto laborum officiis pariatur placeat quae quaerat qui recusandae voluptatum. Accusantium autem, dolorum est expedita fuga illo ipsum libero magni nobis omnis porro quia quidem repudiandae suscipit unde vel velit voluptas.</p>
-            <button class="btn">Check my GitHub</button>
+            <button class="btn"><a href="https://github.com/krzysiekswol" class="btn__link" target="_blank">Check my GitHub</a></button>
             <hr>
         </main>
         <footer>
